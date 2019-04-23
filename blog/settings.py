@@ -35,6 +35,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'article',  # 文章App
+    'category',  # 分类App
+    'comment',  # 评论App
+    'display',  # 博客详情App
+    'feeds',  # 订阅App
+    'index',  # 主页App
+    'search',  # 搜索App
+    'tag',  # 标签App
+    'user',  # 用户App
 ]
 
 MIDDLEWARE = [
@@ -52,8 +61,7 @@ ROOT_URLCONF = 'blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
